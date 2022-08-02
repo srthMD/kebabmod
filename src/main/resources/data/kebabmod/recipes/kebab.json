@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "LSB",
+    " # "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:cooked_beef"
+    },
+    "L": {
+      "item": "minecraft:oak_leaves"
+    },
+    "B": {
+      "item": "minecraft:beetroot"
+    },
+    "#": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "item": "kebabmod:kebab"
+  }
+}
