@@ -22,24 +22,13 @@ import java.util.stream.Collectors;
 @Mod("kebabmod")
 public class KebabMod
 {
-
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "kebabmod";
     public KebabMod()
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         KebabModItems.register(eventBus);
-
         MinecraftForge.EVENT_BUS.register(this);
-    }
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents
-    {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
-        {
-        }
     }
 }
 
